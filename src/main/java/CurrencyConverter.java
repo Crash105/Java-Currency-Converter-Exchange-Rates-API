@@ -86,8 +86,6 @@ public class CurrencyConverter {
 
                 String toCurrency = (String) dropdown.getSelectedItem();
 
-                System.out.println("Amount:" + amount + "Dropdown: " + toCurrency);
-
                 try {
                     double currency = convertCurrency(amount, fromCurrency, toCurrency);
                     String formattedText = String.format("Conversion: %.2f %s is equal to %.2f %s",
